@@ -28,7 +28,7 @@ To improve code quality and integration possibilities there are using set of fol
  * [Stylelint](https://stylelint.io/) with rules set defined for Drupal core.
  * [Twigcs](https://github.com/friendsoftwig/twigcs) with standard set of rules
   for twig templates.
- * [Drupl-check](https://github.com/mglaman/drupal-check) to check project
+ * [Drupal-check](https://github.com/mglaman/drupal-check) to check project
  readiness to Drupal 9 via checking of deprecated code usage.
  * @TODO [PHPUnit](https://phpunit.de/) test to check key contrib modules tests.
 
