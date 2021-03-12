@@ -17,7 +17,7 @@ __OS2Forms__ is a drupal based solution for creating advanced webform functional
 
 <a name="license"></a>
 ## License
-All OS2Forms projects are using [EUPL v1.2 License](https://opensource.org/licenses/EUPL-1.2).
+All OS2forms projects are released under [MPL. 2.0](https://opensource.org/licenses/MPL-2.0) unless another license is issued in the repository or another license in underlying codebases state otherwise. Drupal for instanse is released on [GPL 2.0](https://opensource.org/licenses/GPL-2.0) and all software built on Drupal must be released on the same license.
 
 <a name="testing-and-ci"></a>
 ## Testing and CI
