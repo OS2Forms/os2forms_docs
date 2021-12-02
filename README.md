@@ -75,9 +75,12 @@ New changes or bugfixes in existing codebase have to be added to repository
 through general [code review process](https://github.com/features/code-review/).
 To request a code review, use the following process:
 1. Add Github pull request from the feature/bugfix branch to 8.x or other related dev branch.
-2. Request code review from one of project contributor.
-3. Reviewer approves, requests changes or rejects pull request.
-4. Discuss/Add requested changes or merge approved pull request.
+2. Request code review from internal department
+3. Test features with customer on test setting
+4. Fix bugs or get approval from customer
+5. Request code review from one of project contributor (other department/company).
+6. Reviewer approves, requests changes or rejects pull request.
+7. Discuss/Add requested changes or merge approved pull request.
 
 NOTE: There are preconditions that have to be met before accepting a pull request:
 - All requested changes have to be done
