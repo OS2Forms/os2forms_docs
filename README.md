@@ -15,6 +15,11 @@
 
 __OS2Forms__ is a drupal based solution for creating advanced webform functionality for Danish Municipalities.
 
+Solution main repositories:
+* Drupal core incl. installatioj profile: https://github.com/OS2Forms/os2forms8
+* OS2Forms forløb profile: https://github.com/OS2Forms/os2forms_forloeb_profile
+* OS2Forms main Drupal module https://github.com/OS2Forms/os2forms
+
 <a name="license"></a>
 ## License
 All OS2Forms projects are using [EUPL v1.2 License](https://opensource.org/licenses/EUPL-1.2).
