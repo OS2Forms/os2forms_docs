@@ -7,6 +7,7 @@
 * [Testing and CI](#testing-and-ci)
 * [Git guideline](#git-guideline)
 * [Code review](#code-review)
+* [Patching principles](#patching-principles)
 * [Code of Conduct](#coc)
 * [Links](#links)
 
@@ -67,7 +68,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 * PATCH version when you make backwards compatible bug fixes.
 
 #### Outdated approach
-Since OS2Forms projects are Drupal friednly, there was used drupal-friendly
+Since OS2Forms projects are Drupal friendly, there was used drupal-friendly
 git branch/tag names like 8.x, 8.x-2.x. Please keep use it or ask about changes
 in case this names are not compatible with changes you have.
 
@@ -91,6 +92,46 @@ NOTE: There are preconditions that have to be met before accepting a pull reques
 - All requested changes have to be done
 - All discussion have to be resolved
 - Pull request should have green Travis CI build status.
+
+<a name="patching-principles"></a>
+## Patching principles
+To patch a drupal composer project see:
+https://www.drupal.org/docs/develop/git/using-git-to-contribute-to-drupal/working-with-patches/applying-a-patch-in-a-feature-branch#s-composer
+
+- Composer based projects in os2forms should always use [cweagans/composer-patches](https://github.com/cweagans/composer-patches) package to patch extensions.
+- To allow patching of project dependencies add "enable-patching" to your composer file configuration:
+```
+  "extra": {
+      "enable-patching": true
+  }
+```
+- Patching should only be used for drupal contributed modules, drupal core and other packages maintained outside os2forms organisation.
+- Patching should be handled by the os2forms project that introduces the externally maintained code.
+- Patches should include a link reference to the issue it addresses, if any exist.
+- If an external package(1) introduces another external package(2) the patch should be handled by the project that introduced package 1.
+
+Example:
+
+Given the following dependency tree:
+```
+composer why drupal/dynamic_entity_reference -r
+
+drupal/recommended-project        -                    requires os2forms/os2forms_forloeb_profile (dev-composer_cleanup)  
+drupal/recommended-project        -                    requires os2forms/os2forms_forloeb (dev-composer_cleanup as 2.5.0) 
+os2forms/os2forms_forloeb_profile dev-composer_cleanup requires os2forms/os2forms_forloeb (^2.5)                          
+os2forms/os2forms_forloeb         dev-composer_cleanup requires drupal/workflow_participants (^2.4)                       
+drupal/workflow_participants      2.6.0                requires drupal/dynamic_entity_reference (^2.0) 
+```
+...the os2forms/os2forms_forloeb project is responsible for patching drupal/dynamic_entity_reference contributed module.
+Leave a comment about why the patch belongs here.
+```
+"patches": {
+  "//": "Note: drupal/dynamic_entity_reference is required by drupal/workflow_participants",
+  "drupal/dynamic_entity_reference": {
+    "entityQuery reference JOINs should specify target_type (https://www.drupal.org/project/dynamic_entity_reference/issues/3120952#comment-14141038)": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
+  }
+```
+
 
 <a name="coc"></a>
 ## Code of Conduct
