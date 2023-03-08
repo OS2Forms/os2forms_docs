@@ -76,7 +76,7 @@ For new repositories it was decided to switch back to github,
 composer way to for branch names.
 
 <a name="code-review"></a>
-## Code review
+## Code review proces
 New changes or bugfixes in existing codebase have to be added to repository
 through general [code review process](https://github.com/features/code-review/).
 To request a code review, use the following process:
@@ -92,6 +92,13 @@ NOTE: There are preconditions that have to be met before accepting a pull reques
 - All requested changes have to be done
 - All discussion have to be resolved
 - Pull request should have green Travis CI build status.
+
+##Code review tasks
+Giving codereview to other developers code should cover
+1.	The use of [Code of conduct](docs#coc)
+2.  The following of the [Testing standards](docs#testing-and-ci)
+3.	That kode is handling successes and errors, can not end in loops and other logical 
+4.	Other questions the developers might see. 
 
 <a name="patching-principles"></a>
 ## Patching principles
