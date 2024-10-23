@@ -11,6 +11,10 @@
 * [Code of Conduct](#coc)
 * [Links](#links)
 
+## Table of files
+
+* [List of modules to maintain](https://github.com/OS2Forms/os2forms_docs/raw/refs/heads/master/files/OS2forms%20-%20moduloversigt%20(sammenligning).xlsx)
+
 <a name="description"></a>
 ## Description
 
