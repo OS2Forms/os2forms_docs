@@ -2,7 +2,7 @@
 
 **Release date: 2025-03-06**  
 **Release no.: 2024/Q4**  
-**Release tag: 4.0.0**
+**Release tag: 4.0.0**  
 **JIRA cases with this release tag: [https://os2web.atlassian.net/issues/?jql=labels%20%3D%20%22Release_4.0.0%22](https://os2web.atlassian.net/issues/?jql=labels%20%3D%20%22Release_4.0.0%22)**
 
 OS2forms has been cleaned up, as agreed with the OS2forms coordination group in the fall of 2024\.
