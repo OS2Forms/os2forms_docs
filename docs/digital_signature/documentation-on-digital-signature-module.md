@@ -1,6 +1,7 @@
 # Digital Signature in OS2forms
 
 Link to module: https://github.com/OS2Forms/os2forms/modules/os2forms_digital_signature/
+
 JIRA case: https://os2web.atlassian.net/browse/S2FRMS-57
 
 In order to digitally sign a document in OS2forms, the “OS2Forms Digital Signature” module must be installed and configured.
