@@ -1,7 +1,9 @@
-# Release notes
+# Release notes for Digital Signature module
 
 **Release date: 2025-0X-XX**  
 **Release tag: 4.X.X**
+**Link to module: https://github.com/OS2Forms/os2forms/modules/os2forms_digital_signature/**<br>
+**JIRA case: https://os2web.atlassian.net/browse/S2FRMS-57**
 
 It is now possible to add digital signatures to forms submissions in OS2forms via the “OS2Forms Digital Signature” module. The module is installed under “Extend”, and subsequently configured via “Configuration” \-\> “System” \-\> “OS2Forms Digital Signature”. Here, among other things, the URL to the signature server, hash salt, relevant IP addresses and time period for handling unsigned submissions must be specified.
 
