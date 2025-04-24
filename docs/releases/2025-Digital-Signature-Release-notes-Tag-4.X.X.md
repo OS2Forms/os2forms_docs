@@ -1,7 +1,7 @@
 # Release notes for Digital Signature module
 
-**Release date: 2025-0X-XX**  
-**Release tag: 4.X.X**
+**Release date: 2025-0X-XX**<br>
+**Release tag: 4.X.X**<br>
 **Link to module: https://github.com/OS2Forms/os2forms/modules/os2forms_digital_signature/**<br>
 **JIRA case: https://os2web.atlassian.net/browse/S2FRMS-57**
 
